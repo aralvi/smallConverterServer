@@ -1,0 +1,50 @@
+# framework and server
+fastapi
+uvicorn[standard]
+
+# jwt & bcrypt
+python-jose[cryptography]
+passlib[bcrypt]
+
+# form_data
+python-multipart
+
+# .env
+python-decouple
+
+# Pydantic Email Validation
+pydantic[email]
+
+# Conversions
+# -image to pdf
+pillow
+
+# -pdf to image
+PyMuPDF
+
+# -pdf to docx
+pdf2docx
+installation-error: https://stackoverflow.com/questions/33785755/getting-could-not-find-function-xmlcheckversion-in-library-libxml2-is-libxml2
+install lxml-4.9.0-cp311-cp311-win_amd64.whl
+aiofiles
+
+# -pdf to excel
+camelot-py[cv]
+xlwt
+also install ghostscript for your machine
+ (linux-ubuntu) sudo apt-get update && sudo apt-get install ghostscript
+ (windows) https://ghostscript.com/releases/gsdnld.html
+ this project uses ghostscript v10 win64bit  which can be directly downloaded from 
+ https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs1000/gs1000w64.exe
+ 
+# -pdf to pptx
+python-pptx
+PyMuPDF
+code inspiration from https://github.com/kevinmcguinness/pdf2pptx/blob/master/pdf2pptx/__init__.py
+
+# Detect file type
+python-magic
+
+# For sending emails
+fastapi-mail (not installed yet, but could be a better option in future)
+yagmail (another extremely simple (GMAIL/SMTP) approach)

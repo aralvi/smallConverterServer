@@ -1,0 +1,38 @@
+< ---------------------------------------------------------------------------------------------->
+
+Instructions to setup first time
+1 - Prerequisites:
+    -   You should use windows operating system as many Conversions depend on it 
+        windows 10 is used in this project
+    -   python should be installed on your machine ( if not https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe)
+        this project uses python v 3.11.0
+    -   MS Office should be installed 
+        this project uses Office 2019 Pro Plus v 16.10
+    -   Ghostscript should be installed on your pc 
+        this project uses ghostscript v10 win64bit  which can be directly downloaded from 
+        https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs1000/gs1000w64.exe
+
+2 - open terminal/command prompt and install virtual environment creator globally by "pip install virtualenv"
+
+3 - close this terminal and open a new one where the app folder is located (not in the app folder)
+
+4 - make a virtual environment by "virtualenv venv" in the command prompt
+
+5 - then run this command "venv\Scripts\activate"
+    this will activate the virtual environment
+
+6 - First install lxml by "pip install modules/lxml-4.9.0-cp311-cp311-win_amd64.whl"
+    Then Install all the dependencies by "pip install -r requirements.txt"
+
+7 - start the server by command "uvicorn app.main:app"
+
+< ---------------------------------------------------------------------------------------------->
+
+Instructions to run server each time
+1 - open terminal where the app folder is located (not in the app folder)
+
+2 - run this command "venv\Scripts\activate"
+
+3 - now this command "uvicorn app.main:app"
+
+< ---------------------------------------------------------------------------------------------->
